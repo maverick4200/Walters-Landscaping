@@ -28,12 +28,47 @@ html,body {
 }
 
 
-.display-4, p, .btn {
+.display-4, .hero-p, .btn {
     font-weight: 700;
     color: white;
     isolation: isolate;
 
 }
+/* Three cards */
+
+.three-cards {
+    padding: 5rem 0;
+}
+
+.card-h3 {
+    color: black;
+}
+
+.three-cards .text-header h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.card-header {
+    color: #0B4C18;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.card-paragraph {
+    color: black;
+    font-weight: 300;
+}
+
+.bi {
+    font-size: 6rem;
+}
+
+/* End of three cards */
+
+
+
 /* Responsive text size for mobile device */
 @media screen and (max-width:767px) {
     .display-4 {
@@ -43,9 +78,9 @@ html,body {
     
     .display-4, p, .btn {
         font-weight: 700;
-        color: white;
         isolation: isolate;
     
     }
     
 }
+
