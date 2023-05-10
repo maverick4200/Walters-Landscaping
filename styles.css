@@ -1,0 +1,51 @@
+html,body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sora', sans-serif;
+}
+
+.navbar .nav-link {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.hero {
+    height: 80vh;
+    position: relative;
+    background-color: black;
+}
+
+.hero::before {
+    content: '';
+    background-image: url(Lawn.png);
+    background-size: cover;
+    position: absolute;
+    inset: 0;
+    opacity: 0.7;
+}
+
+.display-4 {
+    font-size: 3rem;
+}
+
+
+.display-4, p, .btn {
+    font-weight: 700;
+    color: white;
+    isolation: isolate;
+
+}
+/* Responsive text size for mobile device */
+@media screen and (max-width:767px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    
+    .display-4, p, .btn {
+        font-weight: 700;
+        color: white;
+        isolation: isolate;
+    
+    }
+    
+}
