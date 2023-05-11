@@ -12,6 +12,7 @@ html,body {
     height: 80vh;
     position: relative;
     background-color: black;
+    overflow: hidden;
 }
 
 .hero::before {
@@ -38,6 +39,7 @@ html,body {
 
 .three-cards {
     padding: 5rem 0;
+    overflow: hidden;
 }
 
 .card-h3 {
