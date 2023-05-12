@@ -20,20 +20,37 @@
           <a class="navbar-brand" href="#">
             <img src="wp-logo.png" alt="" width="80%">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#">Home</a>
-              <a class="nav-link" href="#">About Us</a>
-              <a class="nav-link" href="#">Services</a>
-              <a class="nav-link" href="#">Gallery</a>
-              <a class="nav-link" href="#">Contact</a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
+            <div class="offcanvas-header">
+              <!-- <img src="TabImage3.png" alt="Tabimage"> -->
+              <!-- <h5 class="offcanvas-title" id="offcanvasLabel">Walter's Landscaping</h5> -->
+              <div class="container-sm">
+              </div>
+              <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <a href="" class="btn btn-success">Get a Quote</a>
-          </div>
-        </div>
+            <div class="offcanvas-body margin-auto">
+              <ul class="navbar-nav ms-auto text-center p-5">
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                  <a class="nav-link" href="#menu">About Us</a>
+                </li>
+                </a>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                  <a class="nav-link" href="#gallery">Services</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                  <a class="nav-link" href="#contact">Gallery</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
       </nav>
       <!-- Hero section -->
       <section class="hero d-flex align-items-center">
@@ -91,9 +108,23 @@
         </div>
       </section>
       <section class="About-Us">
-        <div class="container">
-          <div class="text-header text-center">
-            <h3>About us</h3>
+        <div class="container-fluid">            
+            <div class="two-col">
+              <div class="row g-0">
+                <div class="col-md-6" >
+                  <img src="wp2.png" class="img-fluid" alt="...">
+                </div>
+                <div class="col-md-6" style="background-color: #02340C ;">
+                 <div class="container">
+                  <div class="text-header text-center text-white pt-3">
+                    <h3>About Walter's Landscaping</h3>
+                    </div>
+                    <p class="text-white">
+                      For over two decades, Walter's Landscaping, under the leadership of Walter Sr., has been providing exceptional landscaping services to clients throughout the Chicago metropolitan area and its surrounding suburbs. Our team of skilled landscapers has worked tirelessly to bring to life the visions and aspirations of our esteemed clients. With a commitment to quality and a passion for creating beautiful outdoor spaces, we have built a reputation for excellence in the industry. At Walter's Landscaping, we understand that every client is unique, and we approach each project with a personalized touch to ensure that their dreams are realized. Our unwavering dedication to client satisfaction is the hallmark of our service, and we strive to exceed expectations with every project we undertake.
+                    </p>
+                 </div>
+                </div>
+              </div>
           </div>
         </div>
       </section>

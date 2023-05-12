@@ -83,6 +83,14 @@ html,body {
         isolation: isolate;
     
     }
+
+    .offcanvas .nav-link {
+        font-size: 2.5rem;
+    }
+
+    .offcanvas ul li {
+        font-size: 1.5rem;
+    }
     
 }
 
