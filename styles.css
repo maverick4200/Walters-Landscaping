@@ -1,6 +1,7 @@
 html,body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Sora', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .navbar .nav-link {
@@ -67,6 +68,20 @@ html,body {
     font-size: 6rem;
 }
 
+.Our-services {
+    overflow: hidden;
+    
+}
+
+/* Vertical columns section */
+
+
+
+
+
+/* End of columns */
+
+
 /* End of three cards */
 
 
@@ -94,3 +109,8 @@ html,body {
     
 }
 
+@media screen and (max-width: 991px) {
+    .col-lg-6 .img-fluid {
+        width: 100%;
+    }
+}
