@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar fixed-top navbar-expand-lg bg-white">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="wp-logo.png" alt="" width="80%">
@@ -23,18 +24,18 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas" style="width: 70%;">
             <div class="offcanvas-header">
               <!-- <img src="TabImage3.png" alt="Tabimage"> -->
               <!-- <h5 class="offcanvas-title" id="offcanvasLabel">Walter's Landscaping</h5> -->
               <div class="container-sm">
               </div>
-              <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button" class="btn-close btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body margin-auto">
               <ul class="navbar-nav ms-auto text-center p-5">
                 <li class="nav-item" data-bs-dismiss="offcanvas">
-                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  <a class="nav-link" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item" data-bs-dismiss="offcanvas">
                   <a class="nav-link" href="#menu">About Us</a>
@@ -47,16 +48,16 @@
                   <a class="nav-link" href="#contact">Gallery</a>
                 </li>
                 <li class="nav-item" data-bs-dismiss="offcanvas">
-                  <a class="nav-link" href="#contact">Contact Us</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
       </nav>
       <!-- Hero section -->
-      <section class="hero d-flex align-items-center">
+      <section class="hero d-flex align-items-center" style="margin-top: 5rem">
         <div class="container">
           <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7" data-aos="slide-right">
               <h1 class="display-4">Allow our team of seasoned landscapers to bring your outdoor vision to reality.</h1>
               <p class="hero-p">Walter’s Landscaping offers an extensive range of landscaping services to meet your vision.
               </p>
@@ -127,15 +128,15 @@
       <div class="col-12 col-sm-6 col-md-4 mx-auto my-3">
         <div class="card p-3 border-0 shadow">
           <div class="icon text-center pt-3">
-            <img src="country-house.png" alt="">
+            <img  src="country-house.png" alt="">
           </div>
           <div class="card-body text-center">
             <div class="card-title fw-bold fs-3">
-              <h4>Residential Services</h4>
+              <h4 class="card-service-title">Residential Services</h4>
             </div>
             <hr>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse omnis aperiam minima et!</p>
-            <a href="" class="btn btn-success">Get Started</a>
+            <a href="" class="btn btn-success">Learn more</a>
           </div>
         </div>
       </div>
@@ -146,15 +147,30 @@
           </div>
           <div class="card-body text-center">
             <div class="card-title fw-bold fs-3">
-              <h4>Commercial Services</h4>
+              <h4 class="card-service-title">Commercial Services</h4>
             </div>
             <hr>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse omnis aperiam minima et!</p>
-            <a href="" class="btn btn-success">Get Started</a>
+            <a href="" class="btn btn-success">Learn more</a>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 mx-auto my-3">
+        <div class="card p-3 border-0 shadow">
+          <div class="icon text-center pt-3">
+            <img src="snowplow.png" alt="">
+          </div>
+          <div class="card-body text-center">
+            <div class="card-title fw-bold fs-3">
+              <h4 class="card-service-title">Seasonal Services</h4>
+            </div>
+            <hr>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse omnis aperiam minima et!</p>
+            <a href="" class="btn btn-success">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-12 col-sm-6 col-md-4 mx-auto my-3">
         <div class="card p-3 border-0 shadow">
           <div class="icon text-center pt-3">
             <img src="sno" alt="">
@@ -168,22 +184,7 @@
             <a href="" class="btn btn-success">Get Started</a>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 mx-auto my-3">
-        <div class="card p-3 border-0 shadow">
-          <div class="icon text-center pt-3">
-            <img src="sno" alt="">
-          </div>
-          <div class="card-body text-center">
-            <div class="card-title fw-bold fs-3">
-              <h4>Custom Services</h4>
-            </div>
-            <hr>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse omnis aperiam minima et!</p>
-            <a href="" class="btn btn-success">Get Started</a>
-          </div>
-        </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -194,6 +195,13 @@
   </div>
 </section>
     </header>
+    <!-- data aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+      );
+    </script>
+    <!-- end of data aos -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
 </html>

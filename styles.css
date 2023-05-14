@@ -4,10 +4,39 @@ html,body {
     scroll-behavior: smooth;
 }
 
+/* nav links hover line animation */
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+  }
+  .navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: "";
+    background-color: #0B4C18;
+    width: 0%;
+    height: 4px;
+    transition: all 0.5s;
+  }
+  .navbar .navbar-nav .nav-item:hover::after {
+    width: 90%;
+  }
+  
+
+/* End of nav link animation */
+
 .navbar .nav-link {
     font-size: 1.2rem;
     font-weight: 700;
 }
+
+.navbar .navbar-toggler {
+    color: white !important;
+    border-color: white !important;
+    }
 
 .hero {
     height: 80vh;
@@ -23,6 +52,10 @@ html,body {
     position: absolute;
     inset: 0;
     opacity: 0.7;
+}
+
+.offcanvas .offcanvas-end {
+    width: 90%
 }
 
 .display-4 {
@@ -73,6 +106,10 @@ html,body {
     
 }
 
+.card-service-title {
+    color: #0B4C18;
+}
+
 /* Vertical columns section */
 
 
@@ -99,18 +136,24 @@ html,body {
     
     }
 
-    .offcanvas .nav-link {
-        font-size: 2.5rem;
-    }
+     /* .offcanvas .nav-link {
+        font-size: clamp(40px, 5vw, 40px);
+    } */
 
     .offcanvas ul li {
-        font-size: 1.5rem;
+        /* font-size: clamp(50px, 5vw, 65px); */
     }
     
 }
 
 @media screen and (max-width: 991px) {
-    .col-lg-6 .img-fluid {
-        width: 100%;
+    
+
+    .offcanvas .nav-link {
+        font-size: clamp(40px, 5vw, 40px);
     }
+
+    .navbar .navbar-nav .nav-item:hover::after {
+        width: 50%;
+      }
 }
