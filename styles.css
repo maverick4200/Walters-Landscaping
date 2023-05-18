@@ -184,6 +184,10 @@ html,body {
     
     }
 
+    .offcanvas-body, .offcanvas-header {
+        background-color: burlywood;
+    }
+
     
 }
 
