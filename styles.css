@@ -147,9 +147,6 @@ html,body {
     margin: 0 auto;
 }
 
-.grid-item {
-
-}
 
 .grid .grid-item{
     width: calc(33.333% - 20px);
