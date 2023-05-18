@@ -62,11 +62,11 @@ html,body {
     font-size: 3rem;
 }
 
-
 .display-4, .hero-p, .btn {
     font-weight: 700;
     color: white;
     isolation: isolate;
+    
 
 }
 /* Three cards */
