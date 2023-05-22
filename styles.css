@@ -2,6 +2,7 @@ html,body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Sora', sans-serif;
     scroll-behavior: smooth;
+    
 }
 
 /* nav links hover line animation */
@@ -129,6 +130,19 @@ html,body {
 }
 
 /* end of garden */
+/* Location */
+.Location {
+    overflow: hidden;
+}
+/* End of location */
+/* Start of footer */
+.footer {
+    position: absolute;
+}
+
+.page-footer {
+    overflow: hidden;
+}
 
 /* gallery */
 
@@ -173,20 +187,23 @@ html,body {
     .display-4 {
         font-size: 2rem;
     }
-    
-    
-    .display-4, p, .btn {
-        font-weight: 700;
-        isolation: isolate;
-    
-    }
 
     .offcanvas-body, .offcanvas-header {
-        background-color: burlywood;
+        background-color: #02340C
+    }
+    .navbar .navbar-nav .nav-item::after {
+        background-color: white;
     }
 
+    .display-4, p, .btn {
+        /* font-weight: 700; */
+        isolation: isolate;
+    }
     
+
 }
+    
+
 
 
 @media screen and (max-width: 991px) {
@@ -199,6 +216,13 @@ html,body {
     .navbar .navbar-nav .nav-item:hover::after {
         width: 50%;
       }
+
+      .offcanvas-body, .offcanvas-header {
+        background-color: #02340C
+    }
+    .navbar .navbar-nav .nav-item::after {
+        background-color: black;
+    }
 }
 
 
