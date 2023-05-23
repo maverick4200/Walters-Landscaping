@@ -168,6 +168,27 @@ html,body {
 
 }
 
+/* end of gallery */
+/* Contact page */
+
+.contact-cta {
+    margin-top: 10rem;
+    height: 40vh;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+
+.contact-cta::before {
+    content: '';
+    background-image: url(/backgroundPictures/paver3.png);
+    background-size: cover;
+    position: absolute;
+    inset: 0;
+    opacity: 0.7;
+}
+/* End of Contact page */
+
 @media (max-width:768px){
     .grid .grid-item{
         width: calc(100%- 20px);
@@ -179,8 +200,6 @@ html,body {
         width: calc(100%);    
     }
 }
-
-/* end of gallery */
 
 /* Responsive text size for mobile device */
 @media screen and (max-width:767px) {
