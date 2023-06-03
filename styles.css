@@ -166,6 +166,7 @@ html,body {
     margin-bottom: 1em;
 }
 
+
 /* end of gallery */
 /* Contact page */
 
@@ -189,6 +190,28 @@ html,body {
 /* form */
 
 /* end of form */
+/* services */
+/* Contact page */
+
+.services-cta {
+    margin-top: 10rem;
+    height: 30vh;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+
+.services-cta::before {
+    content: '';
+    background-image: url(/backgroundPictures/Sod.png);
+    background-size: cover;
+    position: absolute;
+    inset: 0;
+    opacity: 0.6;
+}
+/* End of Contact page */
+/* end of services */
+
 
 @media (max-width:768px){
     .grid .grid-item{
