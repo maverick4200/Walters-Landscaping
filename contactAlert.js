@@ -2,7 +2,7 @@ document.getElementById('project-form').addEventListener('submit', function (eve
   event.preventDefault(); // Prevent the form from submitting normally
 
   // Check if any text fields are empty
-  var textFields = document.querySelectorAll('#project-form input[type="text"]');
+  var textFields = document.querySelectorAll('#project-form input[type="text"], [type="number"], [type="email"]');
   var isMissing = false;
 
   textFields.forEach(function (textField) {
